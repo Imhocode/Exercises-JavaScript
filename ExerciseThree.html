@@ -10,19 +10,17 @@
 
 <body>
     <script>
-        var peticion = prompt("Adivina el numero");
+        var condition = 5;
+        while (answer = prompt("Adivina el numero")) {
+            if (answer == condition) {
 
-
-        if (peticion < 5) {
-
-            alert("El numero correcto es mas alto")
-
-        } else if (peticion > 5) {
-            alert("El numero correcto es mas bajo")
-
-        } else if (peticion == 5) {
-            alert("Es el numero correcto Felicidades")
-
+                alert("El numero es correcto");
+                break;
+            } else if (answer > condition) {
+                alert("El numero es mas bajo")
+            } else if (answer < condition) {
+                alert("El numero es mas alto")
+            }
         }
     </script>
 </body>
